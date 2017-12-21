@@ -1,3 +1,16 @@
+/*
+	https://github.com/koraga/snake
+
+	Game "snake"
+	OpenGL(GLUT)/C++
+
+	Copyright (c) 2017 Alexey Koryazhkin 
+	
+	alexey@koraga3.ru
+	koraga3.ru
+	t.me/koraga
+
+*/
 #include "snake.h"
 
 
@@ -11,10 +24,6 @@ snake::snake(int _x, int _y)
 
 void snake::draw(float _size,bool color)
 {
-	/*glPointSize(_size);
-	glBegin(GL_POINTS);
-	
-	glEnd();*/
 	glEnable(GL_POINT_SMOOTH);
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
